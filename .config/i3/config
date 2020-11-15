@@ -244,7 +244,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id blueberry-tray
 bindsym $mod1+space exec rofi -combi-modi window#drun -theme solarized -font "hack 12" -show combi -icon-theme "Whitesur" -show-icons  
 exec --no-startup-id kdeconnect-indicator
-exec feh --bg-fill ~/Pictures/Wallpapers/wallpaper1.jpg
+exec feh --bg-fill ~/.config/i3/wallpaper0.jpg
 exec --no-startup-id polybar -c .config/polybar/config mainbar-i3
 #Audio
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5\%
