@@ -1,0 +1,24 @@
+#!/bin/bash
+# Autostart for i3
+# by MrGreen [mrgreen@archbang.org]
+
+# Background
+feh --no-fehbg --bg-scale ~/Pictures/Wallpapers/*.jpg &
+
+# Onscreen system stats
+(sleep 2 && conky) &
+
+# Network Manager Applet
+(sleep 2 && nm-applet) &
+
+# Volume
+(sleep 2 && pnmixer) &
+
+# Dunst onscreen messages
+(sleep 2 && dunst) &
+
+# Battery icon
+(sleep 2 && xfce4-power-manager) &
+
+# Xorg keyboard map change for your own country/keyboard layout
+setxkbmap us &
